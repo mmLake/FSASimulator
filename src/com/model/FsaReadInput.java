@@ -23,6 +23,7 @@ public class FsaReadInput {
     public Fsa setNextFsa(){
         try {
             String[] states;
+            int numStates;
             int[][] fsaTable;
             String[] finalStatesStr;
             String[] alphabetStr;
@@ -32,7 +33,8 @@ public class FsaReadInput {
             int colSize, rowSize;
 
             //read in # of states, final states, and alphabet
-            states = new String[Integer.parseInt(bufferreader.readLine())];
+            numStates = Integer.parseInt(bufferreader.readLine());
+            states = new String[numStates];
             finalStatesStr = bufferreader.readLine().split(" ");
             alphabetStr = bufferreader.readLine().split(" ");
 
@@ -46,7 +48,6 @@ public class FsaReadInput {
                 String transitionVal = transitionStr.substring(1, transitionStr.length()-1);
                 String[] transition = transitionVal.split(" ");
                 int curSymbol = alphabetSymbolAsInt((transition[1]));
-                System.out.println(transition[0] + curSymbol + transition[2]);
 
                 fsaTable[Integer.parseInt(transition[0])][curSymbol] = Integer.parseInt(transition[2]);
             }
@@ -72,7 +73,7 @@ public class FsaReadInput {
                 }
             }
 
-            fsa = new Fsa(fsaTable, alphabet, finalStates, testStrings, alphaType);
+            fsa = new Fsa(numStates, fsaTable, alphabet, finalStates, testStrings, alphaType);
             return fsa;
         } catch (Exception ex) {
             return null;

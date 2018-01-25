@@ -1,3 +1,9 @@
+/*
+Maya Lake
+Compile java files, which must be in same directory.
+Execute main method.
+ */
+
 package com;
 
 import com.model.Fsa;

@@ -20,11 +20,10 @@ public class FsaWriteOutput {
             printWriter.println("Finite State Automaton:");
 
             //print number of states, final states, alphabet
-            int numStates = fsa.getFsaTable().length / fsa.getAlphabet().size();
             printWriter.printf("(1)number of states: %d%n" +
                             "(2)final states: %s%n" +
                             "(3)alphabet: %s%n",
-                            numStates, Arrays.toString(fsa.getFinalStates().toArray()), Arrays.toString(fsa.getAlphabet().toArray()));
+                            fsa.getNumStates(), Arrays.toString(fsa.getFinalStates().toArray()), Arrays.toString(fsa.getAlphabet().toArray()));
 
             //print 2d array table
             printWriter.println("(4)transitions:");

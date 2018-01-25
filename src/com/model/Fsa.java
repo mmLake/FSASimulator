@@ -7,12 +7,14 @@ import java.util.ArrayList;
  */
 public class Fsa {
     private int[][] fsaTable; //trap states represented as -1
-    private ArrayList<Integer> alphabet;
+    private ArrayList<Integer> alphabet; //empty string represented as -1
     private ArrayList<Integer> finalStates;
     private String [] testStrings;
     private String fsaAlphaType;
+    private int numStates;
 
-    public Fsa(int[][] fsaTable, ArrayList<Integer> alphabet, ArrayList<Integer> finalStates, String[] testStrings, String fsaAlphaType){
+    public Fsa(int numStates, int[][] fsaTable, ArrayList<Integer> alphabet, ArrayList<Integer> finalStates, String[] testStrings, String fsaAlphaType){
+        this.numStates = numStates;
         this.fsaTable = fsaTable;
         this.alphabet = alphabet;
         this.finalStates = finalStates;
@@ -36,6 +38,7 @@ public class Fsa {
                     break;
                 }
             }
+            //check if symbol is the not the last value in the test string
             if (!(testString[testStr.length()-1] == symbol)){
                 accepted = false;
             } else if(finalStates.contains(state)){
@@ -85,8 +88,6 @@ public class Fsa {
         return value;
     }
 
-
-
     public int[][] getFsaTable() {
         return fsaTable;
     }
@@ -103,6 +104,9 @@ public class Fsa {
         return testStrings;
     }
 
+    public int getNumStates() {
+        return numStates;
+    }
 
     public void setFsaAlphaType(String fsaAlphaType) {
         this.fsaAlphaType = fsaAlphaType;
