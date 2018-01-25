@@ -10,12 +10,14 @@ public class Fsa {
     private ArrayList<Integer> alphabet;
     private ArrayList<Integer> finalStates;
     private String [] testStrings;
+    private String fsaAlphaType;
 
-    public Fsa(int[][] fsaTable, ArrayList<Integer> alphabet, ArrayList<Integer> finalStates, String[] testStrings){
+    public Fsa(int[][] fsaTable, ArrayList<Integer> alphabet, ArrayList<Integer> finalStates, String[] testStrings, String fsaAlphaType){
         this.fsaTable = fsaTable;
         this.alphabet = alphabet;
         this.finalStates = finalStates;
         this.testStrings = testStrings;
+        this.fsaAlphaType = fsaAlphaType;
     }
 
     //fsa algorithm
@@ -45,19 +47,40 @@ public class Fsa {
         return (accepted? "Accept" : "Reject");
     }
 
-    public int numericSymbolVal(int value){
-        if ((value >= 65 && value <= 90) || (value >= 97 && value <= 122)){//letter
-            value = AsciiSymbolStrings.letter.getSymbolIntVal();
-        } else if (value >= 48 && value <= 57) { //digit
-            value = AsciiSymbolStrings.digit.getSymbolIntVal();
-        } else if (value==95) { //underscore
-            value = AsciiSymbolStrings.underscore.getSymbolIntVal();
-        } else if (value==46) { //period
-            value = AsciiSymbolStrings.period.getSymbolIntVal();
-        } else if (value==45) { //hyph
-            value = AsciiSymbolStrings.hyph.getSymbolIntVal();
-        } else if (value==64){ //@
-            value = AsciiSymbolStrings.at.getSymbolIntVal();
+    public int numericSymbolVal(char val){
+        int value = -1;
+        if (fsaAlphaType.equals(AsciiSymbolStrings.letter.type())) {
+            if ((val >= 65 && val <= 90) || (val >= 97 && val <= 122)) {//letter
+                value = AsciiSymbolStrings.letter.getSymbolIntVal();
+            } else if (val >= 48 && val <= 57) { //digit
+                value = AsciiSymbolStrings.digit.getSymbolIntVal();
+            } else if (val == 95) { //underscore
+                value = AsciiSymbolStrings.underscore.getSymbolIntVal();
+            } else if (val == 46) { //period
+                value = AsciiSymbolStrings.period.getSymbolIntVal();
+            } else if (val == 45) { //hyph
+                value = AsciiSymbolStrings.hyph.getSymbolIntVal();
+            } else if (val == 64) { //@
+                value = AsciiSymbolStrings.at.getSymbolIntVal();
+            }
+        } else if (fsaAlphaType.equals(AsciiSymbolStrings.n.type())){
+            if (val == 'n'){
+                value = AsciiSymbolStrings.n.getSymbolIntVal();
+            } else if (val == 'd'){
+                value = AsciiSymbolStrings.d.getSymbolIntVal();
+            } else if (val == 'q'){
+                value = AsciiSymbolStrings.q.getSymbolIntVal();
+            } else if (val == 's'){
+                value = AsciiSymbolStrings.s.getSymbolIntVal();
+            }
+        } else if (fsaAlphaType.equals(AsciiSymbolStrings.a.type())) {
+            if (val == 'a') {
+                value = AsciiSymbolStrings.a.getSymbolIntVal();
+            } else if (val == 'b') {
+                value = AsciiSymbolStrings.b.getSymbolIntVal();
+            }
+        }else {
+            value = Character.getNumericValue(val);
         }
         return value;
     }
@@ -78,5 +101,10 @@ public class Fsa {
 
     public String[] getTestStrings() {
         return testStrings;
+    }
+
+
+    public void setFsaAlphaType(String fsaAlphaType) {
+        this.fsaAlphaType = fsaAlphaType;
     }
 }

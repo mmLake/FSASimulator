@@ -8,10 +8,11 @@ public class Main {
 
     public static void main(String[] args) {
         FsaReadInput input = new FsaReadInput();
-        Fsa fsa = input.setNextFsa();
-//        System.out.println("FSA ALPHA " + fsa.getAlphabet());
+        Fsa fsa;
         FsaWriteOutput output = new FsaWriteOutput();
 
-        output.appendToFile(fsa);
+        while ((fsa  = input.setNextFsa()) != null){
+            output.appendToFile(fsa);
+        }
     }
 }

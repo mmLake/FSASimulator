@@ -10,6 +10,7 @@ import java.util.Arrays;
 public class FsaReadInput {
     public final String INPUT_FILE_PATH = "src/com/input.txt";
     BufferedReader bufferreader;
+    Fsa fsa;
 
     public FsaReadInput(){
         try {
@@ -27,7 +28,7 @@ public class FsaReadInput {
             String[] alphabetStr;
             ArrayList<String> testStringList = new ArrayList<String>();
             String transitionStr;
-            String testStr;
+            String alphaType = "binary"; //default assumption
             int colSize, rowSize;
 
             //read in # of states, final states, and alphabet
@@ -45,6 +46,7 @@ public class FsaReadInput {
                 String transitionVal = transitionStr.substring(1, transitionStr.length()-1);
                 String[] transition = transitionVal.split(" ");
                 int curSymbol = alphabetSymbolAsInt((transition[1]));
+                System.out.println(transition[0] + curSymbol + transition[2]);
 
                 fsaTable[Integer.parseInt(transition[0])][curSymbol] = Integer.parseInt(transition[2]);
             }
@@ -64,9 +66,15 @@ public class FsaReadInput {
             for (String finalState : finalStatesStr){
                 finalStates.add(Integer.parseInt(finalState));
             }
+            for (AsciiSymbolStrings string : AsciiSymbolStrings.values()){
+                if (alphabetStr[0].equals(string.toString())){
+                    alphaType = string.type();
+                }
+            }
 
-            return new Fsa(fsaTable, alphabet, finalStates, testStrings);
-        } catch (IOException ex) {
+            fsa = new Fsa(fsaTable, alphabet, finalStates, testStrings, alphaType);
+            return fsa;
+        } catch (Exception ex) {
             return null;
         }
     }
