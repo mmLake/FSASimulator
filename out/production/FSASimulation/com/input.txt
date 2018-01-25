@@ -1,0 +1,64 @@
+4
+0 1 2
+0 1
+(0 0 0)
+(0 1 1)
+(1 0 1)
+(1 1 2)
+(2 0 0)
+(2 1 3)
+(3 0 3)
+(3 1 3)
+e
+1
+000
+111000
+000111
+011010
+1010101110
+10101
+00110110110
+111
+#####
+9
+6 7 8
+letter digit - _ . @
+(0 letter 1)
+(0 digit 1)
+(0 - 1)
+(0 _ 1)
+(0 . 1)
+(0 @ -1)
+(1 letter 1)
+(1 digit 1)
+(1 - 1)
+(1 _ 1)
+(1 . 1)
+(1 @ 2)
+(2 letter 3)
+(2 digit 3)
+(2 - 3)
+(2 _ 3)
+(2 . 3)
+(2 @ -1)
+(3 letter 3)
+(3 digit 3)
+(3 - 3)
+(3 _ 3)
+(3 . 4)
+(3 @ -1)
+(4 letter 5)
+(5 letter 6)
+(6 letter 7)
+(7 letter 8)
+a.b.c@d.w3c
+jsmith
+jsmith@olympus
+jsmith@olympus.gov
+_jsmith-example.olympus@states.us
+jsmith.edu
+john@mail.office
+ComputerScienceDepartment@csupomona.edu
+jsmith@LA.cnn.com
+SMITH@bookStore.Peru
+#####
