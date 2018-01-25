@@ -8,7 +8,7 @@ import java.util.Arrays;
  * Created by mayalake on 1/22/18.
  */
 public class FsaReadInput {
-    public static final String INPUT_FILE_PATH = "src/com/input.txt";
+    public final String INPUT_FILE_PATH = "src/com/input.txt";
     BufferedReader bufferreader;
 
     public FsaReadInput(){
@@ -44,8 +44,9 @@ public class FsaReadInput {
             while ((transitionStr = bufferreader.readLine()).startsWith("(")){
                 String transitionVal = transitionStr.substring(1, transitionStr.length()-1);
                 String[] transition = transitionVal.split(" ");
+                int curSymbol = alphabetSymbolAsInt((transition[1]));
 
-                fsaTable[Integer.parseInt(transition[0])][Integer.parseInt(transition[1])] = Integer.parseInt(transition[2]);
+                fsaTable[Integer.parseInt(transition[0])][curSymbol] = Integer.parseInt(transition[2]);
             }
 
             //read in test strings
@@ -58,33 +59,32 @@ public class FsaReadInput {
             ArrayList<Integer> alphabet = new ArrayList<Integer>();
             ArrayList<Integer> finalStates = new ArrayList<Integer>();
             for (String alpha : alphabetStr){
-                int alphaVal = Integer.parseInt(alpha);
-                if ((alphaVal >= 65 && alphaVal <= 90) || (alphaVal >= 97 && alphaVal <= 122)){//letter
-                    alphaVal = AlphabetStrings.letter.numericVal();
-                } else if (alphaVal >= 48 && alphaVal <= 57) { //digit
-                    alphaVal = AlphabetStrings.digit.numericVal();
-                } else if (alphaVal==95) { //underscore
-                    alphaVal = AlphabetStrings.underscore.numericVal();
-                } else if (alphaVal==46) { //period
-                    alphaVal = AlphabetStrings.period.numericVal();
-                } else if (alphaVal==45) { //hyph
-                    alphaVal = AlphabetStrings.hyph.numericVal();
-                } else if (alphaVal==64){ //@
-                    alphaVal = AlphabetStrings.at.numericVal();
-                }
-
-                alphabet.add(alphaVal);
+                alphabet.add(alphabetSymbolAsInt(alpha));
             }
             for (String finalState : finalStatesStr){
                 finalStates.add(Integer.parseInt(finalState));
             }
 
-            Fsa newFsa = new Fsa(fsaTable, alphabet, finalStates, testStrings);
-
-            return newFsa;
+            return new Fsa(fsaTable, alphabet, finalStates, testStrings);
         } catch (IOException ex) {
             return null;
         }
     }
 
+    public int alphabetSymbolAsInt(String alpha){
+        int alphaVal = -1;
+        //an integer value alphabet
+        try{
+            alphaVal = Integer.parseInt(alpha);
+
+        }//a string value alphabet
+        catch(Exception e){
+            for (AsciiSymbolStrings string : AsciiSymbolStrings.values()){
+                if (alpha.equals(string.toString())){
+                    alphaVal = string.getSymbolIntVal();
+                }
+            }
+        }
+        return alphaVal;
+    }
 }

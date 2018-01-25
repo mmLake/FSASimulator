@@ -142,3 +142,1179 @@ e              	Accept
 10101          	Accept    
 00110110110    	Accept    
 111            	Reject    
+Finite State Automaton:
+(1)number of states: 2
+(2)final states: [0, 1, 2]
+(3)alphabet: [0, 1]
+(4)transitions:
+    0    0    0
+    0    1    1
+    1    0    1
+    1    1    2
+    2    0    0
+    2    1    3
+    3    0    3
+    3    1    3
+(5)strings:
+e              	Accept    
+1              	Accept    
+000            	Accept    
+111000         	Reject    
+000111         	Reject    
+011010         	Accept    
+1010101110     	Reject    
+10101          	Accept    
+00110110110    	Accept    
+111            	Reject    
+Finite State Automaton:
+(1)number of states: 2
+(2)final states: [0, 1, 2]
+(3)alphabet: [0, 1]
+(4)transitions:
+    0    0    0
+    0    1    1
+    1    0    1
+    1    1    2
+    2    0    0
+    2    1    3
+    3    0    3
+    3    1    3
+(5)strings:
+-1             	Accept    
+1              	Accept    
+000            	Accept    
+111000         	Reject    
+000111         	Reject    
+011010         	Accept    
+1010101110     	Reject    
+10101          	Accept    
+00110110110    	Accept    
+111            	Reject    
+Finite State Automaton:
+(1)number of states: 2
+(2)final states: [0, 1, 2]
+(3)alphabet: [0, 1]
+(4)transitions:
+    0    0    0
+    0    1    1
+    1    0    1
+    1    1    2
+    2    0    0
+    2    1    3
+    3    0    3
+    3    1    3
+(5)strings:
+-1             	Accept    
+1              	Accept    
+000            	Accept    
+111000         	Reject    
+000111         	Reject    
+011010         	Accept    
+1010101110     	Reject    
+10101          	Accept    
+00110110110    	Accept    
+111            	Reject    
+Finite State Automaton:
+(1)number of states: 2
+(2)final states: [0, 1, 2]
+(3)alphabet: [0, 1]
+(4)transitions:
+    0    0    0
+    0    1    1
+    1    0    1
+    1    1    2
+    2    0    0
+    2    1    3
+    3    0    3
+    3    1    3
+(5)strings:
+-1             	Accept    
+1              	Accept    
+000            	Accept    
+111000         	Reject    
+000111         	Reject    
+011010         	Accept    
+1010101110     	Reject    
+10101          	Accept    
+00110110110    	Accept    
+111            	Reject    
+Finite State Automaton:
+(1)number of states: 2
+(2)final states: [0, 1, 2]
+(3)alphabet: [0, 1]
+(4)transitions:
+    0    0    0
+    0    1    1
+    1    0    1
+    1    1    2
+    2    0    0
+    2    1    3
+    3    0    3
+    3    1    3
+(5)strings:
+-1             	Accept    
+1              	Accept    
+000            	Accept    
+111000         	Reject    
+000111         	Reject    
+011010         	Accept    
+1010101110     	Reject    
+10101          	Accept    
+00110110110    	Accept    
+111            	Reject    
+Finite State Automaton:
+(1)number of states: 2
+(2)final states: [0, 1, 2]
+(3)alphabet: [0, 1]
+(4)transitions:
+    0    0    0
+    0    1    1
+    1    0    1
+    1    1    2
+    2    0    0
+    2    1    3
+    3    0    3
+    3    1    3
+(5)strings:
+-1             	Accept    
+1              	Accept    
+000            	Accept    
+111000         	Reject    
+000111         	Reject    
+011010         	Accept    
+1010101110     	Reject    
+10101          	Accept    
+00110110110    	Accept    
+111            	Reject    
+Finite State Automaton:
+(1)number of states: 2
+(2)final states: [0, 1, 2]
+(3)alphabet: [0, 1]
+(4)transitions:
+    0    0    0
+    0    1    0
+    1    0    0
+    1    1    0
+    2    0    0
+    2    1    0
+    3    0    0
+    3    1    0
+(5)strings:
+-1             	Accept    
+1              	Accept    
+000            	Accept    
+111000         	Accept    
+000111         	Accept    
+011010         	Accept    
+1010101110     	Accept    
+10101          	Accept    
+00110110110    	Accept    
+111            	Accept    
+Finite State Automaton:
+(1)number of states: 2
+(2)final states: [0, 1, 2]
+(3)alphabet: [0, 1]
+(4)transitions:
+    0    0    0
+    0    1    0
+    1    0    0
+    1    1    0
+    2    0    0
+    2    1    0
+    3    0    0
+    3    1    0
+(5)strings:
+-1             	Accept    
+1              	Accept    
+000            	Accept    
+111000         	Accept    
+000111         	Accept    
+011010         	Accept    
+1010101110     	Accept    
+10101          	Accept    
+00110110110    	Accept    
+111            	Accept    
+Finite State Automaton:
+(1)number of states: 4
+(2)final states: [6, 7, 8]
+(3)alphabet: [0, 1]
+(4)transitions:
+    0    0    0
+    0    1    0
+    0    2    0
+    0    3    0
+    0    4    0
+    0    5    0
+    1    0    0
+    1    1    0
+    1    2    0
+    1    3    0
+    1    4    0
+    1    5    0
+    2    0    0
+    2    1    0
+    2    2    0
+    2    3    0
+    2    4    0
+    2    5    0
+    3    0    0
+    3    1    0
+    3    2    0
+    3    3    0
+    3    4    0
+    3    5    0
+    4    0    0
+    4    1    0
+    4    2    0
+    4    3    0
+    4    4    0
+    4    5    0
+    5    0    0
+    5    1    0
+    5    2    0
+    5    3    0
+    5    4    0
+    5    5    0
+    6    0    0
+    6    1    0
+    6    2    0
+    6    3    0
+    6    4    0
+    6    5    0
+    7    0    0
+    7    1    0
+    7    2    0
+    7    3    0
+    7    4    0
+    7    5    0
+    8    0    0
+    8    1    0
+    8    2    0
+    8    3    0
+    8    4    0
+    8    5    0
+(5)strings:
+a.b.c@d.w3c    	Reject    
+jsmith         	Reject    
+jsmith@olympus 	Reject    
+jsmith@olympus.gov	Reject    
+_jsmith-example.olympus@states.us	Reject    
+jsmith.edu     	Reject    
+john@mail.office	Reject    
+ComputerScienceDepartment@csupomona.edu	Reject    
+jsmith@LA.cnn.com	Reject    
+SMITH@bookStore.Peru	Reject    
+Finite State Automaton:
+(1)number of states: 2
+(2)final states: [0, 1, 2]
+(3)alphabet: [0, 1]
+(4)transitions:
+    0    0    0
+    0    1    1
+    1    0    1
+    1    1    2
+    2    0    0
+    2    1    3
+    3    0    3
+    3    1    3
+(5)strings:
+-1             	Accept    
+1              	Accept    
+000            	Accept    
+111000         	Reject    
+000111         	Reject    
+011010         	Accept    
+1010101110     	Reject    
+10101          	Accept    
+00110110110    	Accept    
+111            	Reject    
+Finite State Automaton:
+(1)number of states: 2
+(2)final states: [0, 1, 2]
+(3)alphabet: [0, 1]
+(4)transitions:
+    0    0    0
+    0    1    1
+    1    0    1
+    1    1    2
+    2    0    0
+    2    1    3
+    3    0    3
+    3    1    3
+(5)strings:
+-1             	Accept    
+1              	Accept    
+000            	Accept    
+111000         	Reject    
+000111         	Reject    
+011010         	Accept    
+1010101110     	Reject    
+10101          	Accept    
+00110110110    	Accept    
+111            	Reject    
+Finite State Automaton:
+(1)number of states: 2
+(2)final states: [0, 1, 2]
+(3)alphabet: [0, 1]
+(4)transitions:
+    0    0    0
+    0    1    1
+    1    0    1
+    1    1    2
+    2    0    0
+    2    1    3
+    3    0    3
+    3    1    3
+(5)strings:
+-1             	Accept    
+1              	Accept    
+000            	Accept    
+111000         	Reject    
+000111         	Reject    
+011010         	Accept    
+1010101110     	Reject    
+10101          	Accept    
+00110110110    	Accept    
+111            	Reject    
+Finite State Automaton:
+(1)number of states: 1
+(2)final states: [6, 7, 8]
+(3)alphabet: [0, 1, 2, 3, 4, 5]
+(4)transitions:
+    0    0    1
+    0    1    1
+    0    2    1
+    0    3    1
+    0    4    1
+    0    5   -1
+    1    0    1
+    1    1    1
+    1    2    1
+    1    3    1
+    1    4    1
+    1    5    2
+    2    0    3
+    2    1    3
+    2    2    3
+    2    3    3
+    2    4    3
+    2    5   -1
+    3    0    3
+    3    1    3
+    3    2    3
+    3    3    3
+    3    4    4
+    3    5   -1
+    4    0    5
+    4    1    0
+    4    2    0
+    4    3    0
+    4    4    0
+    4    5    0
+    5    0    6
+    5    1    0
+    5    2    0
+    5    3    0
+    5    4    0
+    5    5    0
+    6    0    7
+    6    1    0
+    6    2    0
+    6    3    0
+    6    4    0
+    6    5    0
+    7    0    8
+    7    1    0
+    7    2    0
+    7    3    0
+    7    4    0
+    7    5    0
+    8    0    0
+    8    1    0
+    8    2    0
+    8    3    0
+    8    4    0
+    8    5    0
+(5)strings:
+a.b.c@d.w3c    	Reject    
+jsmith         	Reject    
+jsmith@olympus 	Reject    
+jsmith@olympus.gov	Reject    
+_jsmith-example.olympus@states.us	Reject    
+jsmith.edu     	Reject    
+john@mail.office	Reject    
+ComputerScienceDepartment@csupomona.edu	Reject    
+jsmith@LA.cnn.com	Reject    
+SMITH@bookStore.Peru	Reject    
+Finite State Automaton:
+(1)number of states: 2
+(2)final states: [0, 1, 2]
+(3)alphabet: [0, 1]
+(4)transitions:
+    0    0    0
+    0    1    1
+    1    0    1
+    1    1    2
+    2    0    0
+    2    1    3
+    3    0    3
+    3    1    3
+(5)strings:
+-1             	Accept    
+1              	Accept    
+000            	Accept    
+111000         	Reject    
+000111         	Reject    
+011010         	Accept    
+1010101110     	Reject    
+10101          	Accept    
+00110110110    	Accept    
+111            	Reject    
+Finite State Automaton:
+(1)number of states: 1
+(2)final states: [6, 7, 8]
+(3)alphabet: [0, 1, 2, 3, 4, 5]
+(4)transitions:
+    0    0    1
+    0    1    1
+    0    2    1
+    0    3    1
+    0    4    1
+    0    5   -1
+    1    0    1
+    1    1    1
+    1    2    1
+    1    3    1
+    1    4    1
+    1    5    2
+    2    0    3
+    2    1    3
+    2    2    3
+    2    3    3
+    2    4    3
+    2    5   -1
+    3    0    3
+    3    1    3
+    3    2    3
+    3    3    3
+    3    4    4
+    3    5   -1
+    4    0    5
+    4    1   -1
+    4    2   -1
+    4    3   -1
+    4    4   -1
+    4    5   -1
+    5    0    6
+    5    1   -1
+    5    2   -1
+    5    3   -1
+    5    4   -1
+    5    5   -1
+    6    0    7
+    6    1   -1
+    6    2   -1
+    6    3   -1
+    6    4   -1
+    6    5   -1
+    7    0    8
+    7    1   -1
+    7    2   -1
+    7    3   -1
+    7    4   -1
+    7    5   -1
+    8    0   -1
+    8    1   -1
+    8    2   -1
+    8    3   -1
+    8    4   -1
+    8    5   -1
+(5)strings:
+a.b.c@d.w3c    	Reject    
+jsmith         	Reject    
+jsmith@olympus 	Reject    
+jsmith@olympus.gov	Reject    
+_jsmith-example.olympus@states.us	Reject    
+jsmith.edu     	Reject    
+john@mail.office	Reject    
+ComputerScienceDepartment@csupomona.edu	Reject    
+jsmith@LA.cnn.com	Reject    
+SMITH@bookStore.Peru	Reject    
+Finite State Automaton:
+(1)number of states: 2
+(2)final states: [0, 1, 2]
+(3)alphabet: [0, 1]
+(4)transitions:
+    0    0    0
+    0    1    1
+    1    0    1
+    1    1    2
+    2    0    0
+    2    1    3
+    3    0    3
+    3    1    3
+(5)strings:
+-1             	Accept    
+1              	Accept    
+000            	Accept    
+111000         	Reject    
+000111         	Reject    
+011010         	Accept    
+1010101110     	Reject    
+10101          	Accept    
+00110110110    	Accept    
+111            	Reject    
+Finite State Automaton:
+(1)number of states: 1
+(2)final states: [6, 7, 8]
+(3)alphabet: [0, 1, 2, 3, 4, 5]
+(4)transitions:
+    0    0    1
+    0    1    1
+    0    2    1
+    0    3    1
+    0    4    1
+    0    5   -1
+    1    0    1
+    1    1    1
+    1    2    1
+    1    3    1
+    1    4    1
+    1    5    2
+    2    0    3
+    2    1    3
+    2    2    3
+    2    3    3
+    2    4    3
+    2    5   -1
+    3    0    3
+    3    1    3
+    3    2    3
+    3    3    3
+    3    4    4
+    3    5   -1
+    4    0    5
+    4    1   -1
+    4    2   -1
+    4    3   -1
+    4    4   -1
+    4    5   -1
+    5    0    6
+    5    1   -1
+    5    2   -1
+    5    3   -1
+    5    4   -1
+    5    5   -1
+    6    0    7
+    6    1   -1
+    6    2   -1
+    6    3   -1
+    6    4   -1
+    6    5   -1
+    7    0    8
+    7    1   -1
+    7    2   -1
+    7    3   -1
+    7    4   -1
+    7    5   -1
+    8    0   -1
+    8    1   -1
+    8    2   -1
+    8    3   -1
+    8    4   -1
+    8    5   -1
+(5)strings:
+a.b.c@d.w3c    	Reject    
+jsmith         	Reject    
+jsmith@olympus 	Reject    
+jsmith@olympus.gov	Reject    
+_jsmith-example.olympus@states.us	Reject    
+jsmith.edu     	Reject    
+john@mail.office	Reject    
+ComputerScienceDepartment@csupomona.edu	Reject    
+jsmith@LA.cnn.com	Reject    
+SMITH@bookStore.Peru	Reject    
+Finite State Automaton:
+(1)number of states: 2
+(2)final states: [0, 1, 2]
+(3)alphabet: [0, 1]
+(4)transitions:
+    0    0    0
+    0    1    1
+    1    0    1
+    1    1    2
+    2    0    0
+    2    1    3
+    3    0    3
+    3    1    3
+(5)strings:
+-1             	Accept    
+1              	Accept    
+000            	Accept    
+111000         	Reject    
+000111         	Reject    
+011010         	Accept    
+1010101110     	Reject    
+10101          	Accept    
+00110110110    	Accept    
+111            	Reject    
+Finite State Automaton:
+(1)number of states: 1
+(2)final states: [6, 7, 8]
+(3)alphabet: [0, 1, 2, 3, 4, 5]
+(4)transitions:
+    0    0    1
+    0    1    1
+    0    2    1
+    0    3    1
+    0    4    1
+    0    5   -1
+    1    0    1
+    1    1    1
+    1    2    1
+    1    3    1
+    1    4    1
+    1    5    2
+    2    0    3
+    2    1    3
+    2    2    3
+    2    3    3
+    2    4    3
+    2    5   -1
+    3    0    3
+    3    1    3
+    3    2    3
+    3    3    3
+    3    4    4
+    3    5   -1
+    4    0    5
+    4    1   -1
+    4    2   -1
+    4    3   -1
+    4    4   -1
+    4    5   -1
+    5    0    6
+    5    1   -1
+    5    2   -1
+    5    3   -1
+    5    4   -1
+    5    5   -1
+    6    0    7
+    6    1   -1
+    6    2   -1
+    6    3   -1
+    6    4   -1
+    6    5   -1
+    7    0    8
+    7    1   -1
+    7    2   -1
+    7    3   -1
+    7    4   -1
+    7    5   -1
+    8    0   -1
+    8    1   -1
+    8    2   -1
+    8    3   -1
+    8    4   -1
+    8    5   -1
+(5)strings:
+a.b.c@d.w3c    	Reject    
+jsmith         	Reject    
+jsmith@olympus 	Reject    
+jsmith@olympus.gov	Reject    
+_jsmith-example.olympus@states.us	Reject    
+jsmith.edu     	Reject    
+john@mail.office	Reject    
+ComputerScienceDepartment@csupomona.edu	Reject    
+jsmith@LA.cnn.com	Reject    
+SMITH@bookStore.Peru	Reject    
+Finite State Automaton:
+(1)number of states: 1
+(2)final states: [6, 7, 8]
+(3)alphabet: [0, 1, 2, 3, 4, 5]
+(4)transitions:
+    0    0    1
+    0    1    1
+    0    2    1
+    0    3    1
+    0    4    1
+    0    5   -1
+    1    0    1
+    1    1    1
+    1    2    1
+    1    3    1
+    1    4    1
+    1    5    2
+    2    0    3
+    2    1    3
+    2    2    3
+    2    3    3
+    2    4    3
+    2    5   -1
+    3    0    3
+    3    1    3
+    3    2    3
+    3    3    3
+    3    4    4
+    3    5   -1
+    4    0    5
+    4    1   -1
+    4    2   -1
+    4    3   -1
+    4    4   -1
+    4    5   -1
+    5    0    6
+    5    1   -1
+    5    2   -1
+    5    3   -1
+    5    4   -1
+    5    5   -1
+    6    0    7
+    6    1   -1
+    6    2   -1
+    6    3   -1
+    6    4   -1
+    6    5   -1
+    7    0    8
+    7    1   -1
+    7    2   -1
+    7    3   -1
+    7    4   -1
+    7    5   -1
+    8    0   -1
+    8    1   -1
+    8    2   -1
+    8    3   -1
+    8    4   -1
+    8    5   -1
+(5)strings:
+a.b.c@d.w3c    	Reject    
+jsmith         	Reject    
+jsmith@olympus 	Reject    
+jsmith@olympus.gov	Reject    
+_jsmith-example.olympus@states.us	Reject    
+jsmith.edu     	Reject    
+john@mail.office	Reject    
+ComputerScienceDepartment@csupomona.edu	Reject    
+jsmith@LA.cnn.com	Reject    
+SMITH@bookStore.Peru	Reject    
+Finite State Automaton:
+(1)number of states: 1
+(2)final states: [6, 7, 8]
+(3)alphabet: [0, 1, 2, 3, 4, 5]
+(4)transitions:
+    0    0    1
+    0    1    1
+    0    2    1
+    0    3    1
+    0    4    1
+    0    5   -1
+    1    0    1
+    1    1    1
+    1    2    1
+    1    3    1
+    1    4    1
+    1    5    2
+    2    0    3
+    2    1    3
+    2    2    3
+    2    3    3
+    2    4    3
+    2    5   -1
+    3    0    3
+    3    1    3
+    3    2    3
+    3    3    3
+    3    4    4
+    3    5   -1
+    4    0    5
+    4    1   -1
+    4    2   -1
+    4    3   -1
+    4    4   -1
+    4    5   -1
+    5    0    6
+    5    1   -1
+    5    2   -1
+    5    3   -1
+    5    4   -1
+    5    5   -1
+    6    0    7
+    6    1   -1
+    6    2   -1
+    6    3   -1
+    6    4   -1
+    6    5   -1
+    7    0    8
+    7    1   -1
+    7    2   -1
+    7    3   -1
+    7    4   -1
+    7    5   -1
+    8    0   -1
+    8    1   -1
+    8    2   -1
+    8    3   -1
+    8    4   -1
+    8    5   -1
+(5)strings:
+a.b.c@d.w3c    	Reject    
+jsmith         	Reject    
+jsmith@olympus 	Reject    
+jsmith@olympus.gov	Reject    
+_jsmith-example.olympus@states.us	Reject    
+jsmith.edu     	Reject    
+john@mail.office	Reject    
+ComputerScienceDepartment@csupomona.edu	Reject    
+jsmith@LA.cnn.com	Reject    
+SMITH@bookStore.Peru	Reject    
+Finite State Automaton:
+(1)number of states: 1
+(2)final states: [6, 7, 8]
+(3)alphabet: [0, 1, 2, 3, 4, 5]
+(4)transitions:
+    0    0    1
+    0    1    1
+    0    2    1
+    0    3    1
+    0    4    1
+    0    5   -1
+    1    0    1
+    1    1    1
+    1    2    1
+    1    3    1
+    1    4    1
+    1    5    2
+    2    0    3
+    2    1    3
+    2    2    3
+    2    3    3
+    2    4    3
+    2    5   -1
+    3    0    3
+    3    1    3
+    3    2    3
+    3    3    3
+    3    4    4
+    3    5   -1
+    4    0    5
+    4    1   -1
+    4    2   -1
+    4    3   -1
+    4    4   -1
+    4    5   -1
+    5    0    6
+    5    1   -1
+    5    2   -1
+    5    3   -1
+    5    4   -1
+    5    5   -1
+    6    0    7
+    6    1   -1
+    6    2   -1
+    6    3   -1
+    6    4   -1
+    6    5   -1
+    7    0    8
+    7    1   -1
+    7    2   -1
+    7    3   -1
+    7    4   -1
+    7    5   -1
+    8    0   -1
+    8    1   -1
+    8    2   -1
+    8    3   -1
+    8    4   -1
+    8    5   -1
+(5)strings:
+a.b.c@d.w3c    	Reject    
+jsmith         	Reject    
+jsmith@olympus 	Reject    
+jsmith@olympus.gov	Reject    
+_jsmith-example.olympus@states.us	Reject    
+jsmith.edu     	Reject    
+john@mail.office	Reject    
+ComputerScienceDepartment@csupomona.edu	Reject    
+jsmith@LA.cnn.com	Reject    
+SMITH@bookStore.Peru	Reject    
+Finite State Automaton:
+(1)number of states: 1
+(2)final states: [6, 7, 8]
+(3)alphabet: [0, 1, 2, 3, 4, 5]
+(4)transitions:
+    0    0    1
+    0    1    1
+    0    2    1
+    0    3    1
+    0    4    1
+    0    5   -1
+    1    0    1
+    1    1    1
+    1    2    1
+    1    3    1
+    1    4    1
+    1    5    2
+    2    0    3
+    2    1    3
+    2    2    3
+    2    3    3
+    2    4    3
+    2    5   -1
+    3    0    3
+    3    1    3
+    3    2    3
+    3    3    3
+    3    4    4
+    3    5   -1
+    4    0    5
+    4    1   -1
+    4    2   -1
+    4    3   -1
+    4    4   -1
+    4    5   -1
+    5    0    6
+    5    1   -1
+    5    2   -1
+    5    3   -1
+    5    4   -1
+    5    5   -1
+    6    0    7
+    6    1   -1
+    6    2   -1
+    6    3   -1
+    6    4   -1
+    6    5   -1
+    7    0    8
+    7    1   -1
+    7    2   -1
+    7    3   -1
+    7    4   -1
+    7    5   -1
+    8    0   -1
+    8    1   -1
+    8    2   -1
+    8    3   -1
+    8    4   -1
+    8    5   -1
+(5)strings:
+a.b.c@d.w3c    	Reject    
+jsmith         	Reject    
+jsmith@olympus 	Reject    
+jsmith@olympus.gov	Reject    
+_jsmith-example.olympus@states.us	Reject    
+jsmith.edu     	Reject    
+john@mail.office	Reject    
+ComputerScienceDepartment@csupomona.edu	Reject    
+jsmith@LA.cnn.com	Reject    
+SMITH@bookStore.Peru	Reject    
+Finite State Automaton:
+(1)number of states: 1
+(2)final states: [6, 7, 8]
+(3)alphabet: [0, 1, 2, 3, 4, 5]
+(4)transitions:
+    0    0    1
+    0    1    1
+    0    2    1
+    0    3    1
+    0    4    1
+    0    5   -1
+    1    0    1
+    1    1    1
+    1    2    1
+    1    3    1
+    1    4    1
+    1    5    2
+    2    0    3
+    2    1    3
+    2    2    3
+    2    3    3
+    2    4    3
+    2    5   -1
+    3    0    3
+    3    1    3
+    3    2    3
+    3    3    3
+    3    4    4
+    3    5   -1
+    4    0    5
+    4    1   -1
+    4    2   -1
+    4    3   -1
+    4    4   -1
+    4    5   -1
+    5    0    6
+    5    1   -1
+    5    2   -1
+    5    3   -1
+    5    4   -1
+    5    5   -1
+    6    0    7
+    6    1   -1
+    6    2   -1
+    6    3   -1
+    6    4   -1
+    6    5   -1
+    7    0    8
+    7    1   -1
+    7    2   -1
+    7    3   -1
+    7    4   -1
+    7    5   -1
+    8    0   -1
+    8    1   -1
+    8    2   -1
+    8    3   -1
+    8    4   -1
+    8    5   -1
+(5)strings:
+a.b.c@d.w3c    	Reject    
+jsmith         	Reject    
+jsmith@olympus 	Reject    
+jsmith@olympus.gov	Reject    
+_jsmith-example.olympus@states.us	Reject    
+jsmith.edu     	Reject    
+john@mail.office	Reject    
+ComputerScienceDepartment@csupomona.edu	Reject    
+jsmith@LA.cnn.com	Reject    
+SMITH@bookStore.Peru	Reject    
+Finite State Automaton:
+(1)number of states: 1
+(2)final states: [6, 7, 8]
+(3)alphabet: [0, 1, 2, 3, 4, 5]
+(4)transitions:
+    0    0    1
+    0    1    1
+    0    2    1
+    0    3    1
+    0    4    1
+    0    5   -1
+    1    0    1
+    1    1    1
+    1    2    1
+    1    3    1
+    1    4    1
+    1    5    2
+    2    0    3
+    2    1    3
+    2    2    3
+    2    3    3
+    2    4    3
+    2    5   -1
+    3    0    3
+    3    1    3
+    3    2    3
+    3    3    3
+    3    4    4
+    3    5   -1
+    4    0    5
+    4    1   -1
+    4    2   -1
+    4    3   -1
+    4    4   -1
+    4    5   -1
+    5    0    6
+    5    1   -1
+    5    2   -1
+    5    3   -1
+    5    4   -1
+    5    5   -1
+    6    0    7
+    6    1   -1
+    6    2   -1
+    6    3   -1
+    6    4   -1
+    6    5   -1
+    7    0    8
+    7    1   -1
+    7    2   -1
+    7    3   -1
+    7    4   -1
+    7    5   -1
+    8    0   -1
+    8    1   -1
+    8    2   -1
+    8    3   -1
+    8    4   -1
+    8    5   -1
+(5)strings:
+a.b.c@d.w3c    	Reject    
+jsmith         	Reject    
+jsmith@olympus 	Reject    
+jsmith@olympus.gov	Accept    
+_jsmith-example.olympus@states.us	Accept    
+jsmith.edu     	Reject    
+john@mail.office	Reject    
+ComputerScienceDepartment@csupomona.edu	Accept    
+jsmith@LA.cnn.com	Reject    
+SMITH@bookStore.Peru	Accept    
+Finite State Automaton:
+(1)number of states: 1
+(2)final states: [6, 7, 8]
+(3)alphabet: [0, 1, 2, 3, 4, 5]
+(4)transitions:
+    0    0    1
+    0    1    1
+    0    2    1
+    0    3    1
+    0    4    1
+    0    5   -1
+    1    0    1
+    1    1    1
+    1    2    1
+    1    3    1
+    1    4    1
+    1    5    2
+    2    0    3
+    2    1    3
+    2    2    3
+    2    3    3
+    2    4    3
+    2    5   -1
+    3    0    3
+    3    1    3
+    3    2    3
+    3    3    3
+    3    4    4
+    3    5   -1
+    4    0    5
+    4    1   -1
+    4    2   -1
+    4    3   -1
+    4    4   -1
+    4    5   -1
+    5    0    6
+    5    1   -1
+    5    2   -1
+    5    3   -1
+    5    4   -1
+    5    5   -1
+    6    0    7
+    6    1   -1
+    6    2   -1
+    6    3   -1
+    6    4   -1
+    6    5   -1
+    7    0    8
+    7    1   -1
+    7    2   -1
+    7    3   -1
+    7    4   -1
+    7    5   -1
+    8    0   -1
+    8    1   -1
+    8    2   -1
+    8    3   -1
+    8    4   -1
+    8    5   -1
+(5)strings:
+a.b.c@d.w3c    	Reject    
+jsmith         	Reject    
+jsmith@olympus 	Reject    
+jsmith@olympus.gov	Accept    
+_jsmith-example.olympus@states.us	Accept    
+jsmith.edu     	Reject    
+john@mail.office	Reject    
+ComputerScienceDepartment@csupomona.edu	Accept    
+jsmith@LA.cnn.com	Reject    
+SMITH@bookStore.Peru	Accept    

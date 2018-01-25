@@ -24,12 +24,13 @@ public class Fsa {
         int state = 0; //initial state is always set to 0.
         char[] testString = testStr.toCharArray();
         for(char symbol : testString){
-            int symbolVal = Character.getNumericValue(symbol);
+            int symbolVal = numericSymbolVal(symbol);
             //check if symbol is in alphabet
-            if (alphabet.contains(Character.getNumericValue(symbol))) {
+            if (alphabet.contains(symbolVal)) {
                 state = fsaTable[state][symbolVal];
 
                 if (state == -1) {
+                    accepted = false;
                     break;
                 }
             }
@@ -43,6 +44,24 @@ public class Fsa {
         }
         return (accepted? "Accept" : "Reject");
     }
+
+    public int numericSymbolVal(int value){
+        if ((value >= 65 && value <= 90) || (value >= 97 && value <= 122)){//letter
+            value = AsciiSymbolStrings.letter.getSymbolIntVal();
+        } else if (value >= 48 && value <= 57) { //digit
+            value = AsciiSymbolStrings.digit.getSymbolIntVal();
+        } else if (value==95) { //underscore
+            value = AsciiSymbolStrings.underscore.getSymbolIntVal();
+        } else if (value==46) { //period
+            value = AsciiSymbolStrings.period.getSymbolIntVal();
+        } else if (value==45) { //hyph
+            value = AsciiSymbolStrings.hyph.getSymbolIntVal();
+        } else if (value==64){ //@
+            value = AsciiSymbolStrings.at.getSymbolIntVal();
+        }
+        return value;
+    }
+
 
 
     public int[][] getFsaTable() {
